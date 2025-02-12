@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop id="waves-video">
+      <source src="Assets/peace.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Habit Tracker</h1>
+    <div class="month-year">
+      <button id="prev-month">&lt;</button>
+      <span id="current-month-year"></span>
+      <button id="next-month">&gt;</button>
+    </div>
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Side Panel for Notes -->
+  <div id="note-panel" class="note-panel">
+    <div class="note-panel-header">
+      <span id="note-date"></span>
+      <button id="close-note-panel">&times;</button>
+    </div>
+    <textarea id="note-input" placeholder="Write your note here..."></textarea>
+    <button id="save-note">Save Note</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
