@@ -8,16 +8,39 @@
 </head>
 <body>
   <!-- Video Background -->
-  <div class="video-background">
+  <!-- <div class="video-background">
     <video autoplay muted loop id="waves-video">
       <source src="Assets/peace.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  </div> -->
+  <div class="image-background">
+    <img src="Assets/sunset.jpg" alt="Peaceful Background">
   </div>
 
   <!-- Main Container -->
   <div class="container">
     <h1>Habit Tracker</h1>
+    
+    <!-- Analytics Section -->
+    <div class="analytics">
+      <div class="streak-info">
+        <h2>Current Streak</h2>
+        <div id="current-streak">0 days</div>
+      </div>
+      <div class="success-rate">
+        <h2>Success Rate</h2>
+        <div class="progress-bar">
+          <div id="success-rate-bar" class="progress"></div>
+        </div>
+        <div id="success-rate-text">0%</div>
+      </div>
+      <div class="trends">
+        <h2>Insights</h2>
+        <div id="habit-trends"></div>
+      </div>
+    </div>
+
     <div class="month-year">
       <button id="prev-month">&lt;</button>
       <span id="current-month-year"></span>

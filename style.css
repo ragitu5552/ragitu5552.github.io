@@ -22,6 +22,16 @@ body {
   overflow: hidden;
 }
 
+.image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Assets/peace.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
 #waves-video {
   min-width: 100%;
   min-height: 100%;
@@ -182,4 +192,71 @@ h1 {
 
 #save-note:hover {
   background-color: #5a5ae0;
+}
+
+
+
+
+.analytics {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.analytics h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.streak-info {
+  text-align: center;
+}
+
+#current-streak {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.success-rate {
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+#success-rate-text {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.trends {
+  text-align: left;
+}
+
+#habit-trends {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #666;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
